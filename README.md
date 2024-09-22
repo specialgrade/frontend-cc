@@ -1,4 +1,4 @@
-# My Projects
+# 🗃️ My Projects
 
 ## 🗂️ About the Repository
 
