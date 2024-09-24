@@ -12,7 +12,18 @@
 </head>
     
 <body>
-    <h1>✿✿✿</h1>
-    <script src=""></script>
+    <h1 class="title">✿✿✿</h1>
+    <script>
+        // Function to reveal each flower one by one
+        const flowers = ['✿', '✿', '✿'];
+        const titleElement = document.getElementById('loading-title');
+        
+        flowers.forEach((flower, index) => {
+            setTimeout(() => {
+                titleElement.innerHTML += flower;
+                titleElement.style.opacity = 1;
+            }, index * 500); // 500ms delay between each flower
+        });
+    </script>
 </body>
 </html>

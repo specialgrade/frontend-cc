@@ -1,4 +1,5 @@
 /*Imported font families */
+@import url('https://fonts.googleapis.com/css2?family=Gorditas:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Aoboshi+One&display=swap');
 
 /* Global styling variables */
@@ -20,10 +21,86 @@
 body, html {
   margin: 0;
   padding: 0;
-  font-family: 'Aoboshi One', sans-serif;
   box-sizing: border-box;
-  color: var(--white);
-  background: linear-gradient(to right, #FE6581 0%, #FBEDD0 59%, #B7D4D8 100%);
+  background: linear-gradient(to right, #FE6581 10%, #FBEDD0 59%, #B7D4D8 100%);
   text-align: justify;
+  padding-top: 50px;
 }
  
+/* Title styling */
+.title {
+    color: var(--white);
+    font-family: 'Gorditas', sans-serif;
+    text-align: center;
+    -webkit-text-stroke: 1px var(--black);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    font-size: 128px;
+    padding-top: 100px;
+    margin: 60px;
+}
+
+/* Button styling */
+a {
+  color: var(--yellow);
+  font-family: 'Aoboshi One', sans-serif;
+  text-align: center;
+  text-decoration: none;
+  font-size: 24px;
+  margin-top: 20px;
+  margin: 60px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;  
+  width: 100%;  
+  max-width: 1000px;  
+  margin: 0 auto;  
+  padding: 20px; 
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--pink-red);
+  border: 3px solid var(--yellow);
+  box-shadow: var(--box-shadow);
+  border-radius: 25px;
+  width: 180px; 
+  height: 50px; 
+  margin: 0 auto; 
+  text-align: center;
+  padding: 30px;
+  transition: transform 0.3s ease; 
+}
+
+.button:hover {
+  transform: scale(1.1);
+}
+
+.button img {
+  width: 100%; 
+  height: auto; 
+  max-height: 100px; 
+  margin-bottom: 10px; 
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 10px;
+}
+
+/* Arrow styling */
+#arrow {
+  color: var(--yellow);
+  text-align: left;
+  text-decoration: none;
+  font-size: 40px;
+  position: absolute;  
+  top: 20px;  
+  left: 20px;  
+  z-index: 1000;  
+  transition: transform 0.3s ease; 
+}
+
+#arrow:hover {
+  transform: scale(1.1);
+}
