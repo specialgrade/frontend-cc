@@ -9,8 +9,7 @@ In this repository, I have compiled all my frontend development projects, includ
 │   │   ├── 📂 landing_pages   # Standalone landing page designs
 │   │   ├── 📂 web_apps        # Full-fledged web applications
 │   │   ├── 📂 components      # UI component libraries
-├── 📄 README.md               # Project documentation
-└── 📄 LICENSE                 # License information
+└── 📄 README.md               # Project documentation
 ```
 
 ## Tech Stack Used
