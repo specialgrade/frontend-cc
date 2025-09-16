@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="author" content="specialgrade">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="styles.css">
+        <link rel="icon" type="image/x-icon" href="furfresh-icon.jpg">
+        <title>FurFresh - Grooming Services</title>
+    </head>
+    <body>
+        <main>
+        <form action="/action_page.php" role="form" aria-label="FurFresh Grooming Services Form">
+            <div class="header">
+                <h1>FurFresh</h1>
+                <p class="description"><i>Grooming Services Forms</i></p>
+            </div>
+            <section class="owner-inf">
+                <h2>Owner Information</h2>
+                    <label for="fullname">Full Name (eg. Dela Cruz, Juan D.):</label>
+                    <input type="text" class="fullname" name="fullname" placeholder="Enter Name" required aria-required="true">
+                    <label for="phone">Contact Number:</label>
+                    <input type="tel" class="phone" name="phone" pattern="^\+?[0-9]{7,15}$" placeholder="+639123456789" required aria-required="true">
+                    <label for="email">Email Address:</label>
+                    <input type="email" class="email" name="email" placeholder="email@email.com" required aria-required="true">
+            </section>
+            <section class="cat-inf">
+                <h2>Cat Information</h2>
+                    <label for="catname">Name:</label>
+                    <input type="text" class="catname" name="catname" placeholder="Enter Name" required aria-required="true">
+                    <label for="catage">Age (in months):</label>
+                    <input type="number" class="catage" name="catage" min="1" max="456" placeholder="Enter Age" required aria-required="true">
+                    <fieldset aria-labelledby="gender-label">
+                        <legend id="gender-label">Gender:</legend>
+                        <div class="gender-grid">
+                            <div>
+                                <input type="radio" id="gender-male" name="catgender" value="male" checked>
+                                <label for="gender-male">Male</label>   
+                            </div>
+                            <div>
+                                <input type="radio" id="gender-female" name="catgender" value="female">
+                                <label for="gender-female">Female</label>
+                            </div>
+                        </div>
+                    </fieldset>
+                    <label for="catweight">Weight (in kilograms):</label>
+                    <input type="number" class="catweight" name="catweight" min="1" max="60" placeholder="Enter Weight" required aria-required="true">
+                    <fieldset aria-labelledby="breed-label">
+                        <legend id="breed-label">Breed:</legend>
+                        <div class="breed-grid">
+                            <div>
+                                <input type="radio" id="persian" name="catbreed" value="persian" checked>
+                                <label for="persian">Persian</label>
+                            </div>
+                            <div>
+                                <input type="radio" id="siamese" name="catbreed" value="siamese">
+                                <label for="siamese">Siamese</label>
+                            </div>
+                            <div>
+                                <input type="radio" id="maine-coon" name="catbreed" value="maine-coon">
+                                <label for="maine-coon">Maine Coon</label>
+                            </div>
+                            <div>
+                                <input type="radio" id="ragdoll" name="catbreed" value="ragdoll">
+                                <label for="ragdoll">Ragdoll</label>
+                            </div>
+                            <div>
+                                <input type="radio" id="brit-short" name="catbreed" value="brit-short">
+                                <label for="brit-short">British Shorthair</label>
+                            </div>
+                            <div>
+                                <label for="other-breed">Others:</label>
+                                <input type="text" id="other-breed" name="catbreed" placeholder="Enter Breed">
+                            </div>
+                        </div>
+                    </fieldset>
+                    <fieldset aria-labelledby="temp-label">
+                        <legend id="temp-label">Temperament:</legend>
+                        <div class="temp-grid">
+                            <div>
+                                <input type="radio" id="calm" name="cattemp" value="calm" checked>
+                                <label for="calm">Calm</label>
+                            </div>
+                            <div>
+                                <input type="radio" id="playful" name="cattemp" value="playful">
+                                <label for="playful">Playful</label>
+                            </div>
+                            <div>
+                                <input type="radio" id="nervous" name="cattemp" value="nervous">
+                                <label for="nervous">Nervous</label>
+                            </div>
+                            <div>
+                                <input type="radio" id="aggressive" name="cattemp" value="aggressive">
+                                <label for="aggressive">Aggressive</label>
+                            </div>
+                        </div>
+                    </fieldset>
+            </section>
+            <section class="services-inf">
+                <h2>Grooming Services Selection</h2>
+                    <fieldset aria-labelledby="services-label">
+                        <legend id="services-label">Select grooming services to avail</legend>
+                        <div class="services-grid">
+                            <div>
+                                <input type="checkbox" id="fullgroom" name="services[]" checked>
+                                <label for="fullgroom">Full Groom (bath, trim, blow dry)</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" id="bathblow" name="services[]">
+                                <label for="bathblow">Bath & Blow Dry</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" id="furstyle" name="services[]">
+                                <label for="furstyle">Fur Styling / Haircut</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" id="fleaticktreatment" name="services[]">
+                                <label for="fleaticktreatment">Flea & Tick Treatment</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" id="deshedd" name="services[]">
+                                <label for="deshedd">De-shedding Service</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" id="nailtrim" name="services[]">
+                                <label for="nailtrim">Nail Trimming</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" id="sanitarytrim" name="services[]">
+                                <label for="sanitarytrim">Sanitary Trim</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" id="earclean" name="services[]">
+                                <label for="earclean">Ear Cleaning</label>
+                            </div>
+                        </div>
+                    </fieldset>
+            </section>
+            <section class="appointment-inf">
+                <h2>Appointment Details</h2>
+                    <label for="date-time">Preferred Date and Time:</label>
+                    <input type="datetime-local" id="date-time" name="date-time" required aria-required="true">
+                    <label for="instructions">Special Instructions:</label>
+                    <textarea id="instructions" name="instructions" rows="5" cols="70" placeholder="Let us know any special instructions..." aria-describedby="instructions-help"></textarea>
+                    <p id="instructions-help"><strong>Example:</strong> allergies, medical conditions, or special grooming needs.</p>
+                    <button type="submit" id="submit">Submit</button>
+            </section>
+            </form>
+        </main>
+        <footer>
+            <p class="copyright">© 2025 FurFresh Grooming. All rights reserved.</p>
+            <p class="special-note">Designed with ❤️ using HTML & CSS.</p>
+        </footer>
+    </body>
+</html>
