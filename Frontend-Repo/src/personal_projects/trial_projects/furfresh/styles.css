@@ -1,33 +1,56 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Titan+One&display=swap');
 
-/* * {
-    border: 1px solid red;
-} */
-
-label, input, textarea {
-    display: block;
-    margin-bottom: 0.5rem;
-}
-
+/* Global Reset & Variables */
 :root {
     --light-yellow: #FEFDE6;  
     --white-yellow: #FCFDFE;  
     --white-green: #FCFCFA;
     --orange: #EC7D0E;  
     --dark-yellow: #F4EA5A;  
-    --normal-yellow: #F7E704 ;
+    --normal-yellow: #F7E704;
     --black: #141413;  
     --gray: #ABA797;
     --box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);  
 }
 
 html, body {
-    margin: 50px;
-    padding: 20px;
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
     font-family: 'Open Sans', sans-serif;
     color: var(--black);
     background-color: var(--light-yellow);
+}
+
+label, input, textarea {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+::placeholder {
+    font-size: 13px;
+    font-family: 'Open Sans', sans-serif;
+    color: var(--gray);
+}
+
+/** ---------------- HEADER ---------------- **/
+header {
+    background-color: var(--orange);
+    height: 80px;
+    padding: 10px;
+    box-shadow: var(--box-shadow);
+    border-bottom: 1px solid var(--black);
+}
+
+.header {
+    background-color: var(--white-yellow);
+    border: 1px solid var(--black);
+    padding: 20px;
+    box-shadow: var(--box-shadow);
+    border-radius: 10px;
+    width: 40%;
+    margin: 20px auto;
+    text-align: center;
 }
 
 h1 {
@@ -35,27 +58,24 @@ h1 {
     font-family: 'Titan One', sans-serif;
     color: var(--orange);
     -webkit-text-stroke: 0.1px var(--black);
-    margin-top: 0;
-    margin-bottom: 5px;
+    margin: 0;
     text-align: center;
     text-shadow: var(--box-shadow);
 }
 
+.description {
+    font-size: 25px;
+    text-align: center;
+}
+
+/** ---------------- OWNER INFORMATION ---------------- **/
 h2 {
     font-size: 39px;
     font-family: 'Titan One', sans-serif;
     color: var(--dark-yellow);
     -webkit-text-stroke: 0.1px var(--black);
     margin-top: 0;
-    margin-bottom: 10px;
     text-shadow: var(--box-shadow);
-}
-
-.header {
-    background-color: var(--white-yellow);
-    border: 1px solid var(--black);
-    padding: 10px;
-    box-shadow: var(--box-shadow);
 }
 
 label, legend {
@@ -70,12 +90,33 @@ legend {
 }
 
 fieldset {
-    display: flex;
+    display: inline-block;
     align-items: flex-start;
     gap: 10px;
     border: 1px solid var(--black);
 }
 
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="number"],
+input[type="datetime-local"],
+textarea {
+    width: 30%;
+    padding: 8px;
+    border: 1px solid var(--black);
+    border-radius: 3px;
+    margin-bottom: 15px;
+    accent-color: var(--orange);
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    color: var(--black);
+    cursor: pointer;
+}
+
+/** ---------------- CAT INFORMATION ---------------- **/
 .gender-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);  
@@ -94,7 +135,7 @@ fieldset {
 
 .breed-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);  
+  grid-template-columns: repeat(5, 1fr);  
   gap: 15px 20px;  
   margin-top: 10px;
 }
@@ -106,6 +147,13 @@ fieldset {
 
 .breed-grid input[type="checkbox"] {
   margin-right: 5px;  
+}
+
+.breed-grid .others {
+    grid-column: span 3; 
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 
 .temp-grid {
@@ -124,6 +172,17 @@ fieldset {
   margin-right: 5px;  
 }
 
+.cat-inf legend {
+  width: auto;
+  text-align: left;
+  padding: 5px;
+}
+
+.cat-inf div {
+  margin-bottom: 5px;
+}
+
+/** ---------------- GROOMING SERVICE SELECTION ---------------- **/
 .services-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);  
@@ -140,41 +199,38 @@ fieldset {
   margin-right: 5px;  
 }
 
+.services-inf legend {
+  width: auto;
+  text-align: left;
+  padding: 5px;
+}
 
-.description {
-    font-size: 25px;
-    text-align: center;
+.services-inf div {
+  margin-bottom: 5px;
+}
+
+/** ---------------- APPOINTMENT DETAILS ---------------- **/
+.appointment-inf div {
+  margin-bottom: 15px;
+}
+
+#date-time {
+    width: 20%;
+    padding: 8px;
+    border: 1px solid var(--black);
+    border-radius: 4px;
+    color: var(--gray);
+}
+
+#instructions {
+    width: 50%;
+    padding: 8px;
+    border: 1px solid var(--black);
+    border-radius: 4px;
 }
 
 #instructions-help {
     font-size: 13px;
-}
-
-footer {
-    font-size: 13px;
-    font-weight: bold;
-    color: var(--white-yellow);
-    background-color: var(--orange);
-    text-align: center;
-    padding: 10px;
-}
-
-
-
-input[type="datetime-local"] {
-    color: var(--gray);
-    width: 25%;
-}
-
-input[type="radio"] {
-    color: var(--black);
-    cursor: pointer;
-}
-
-::placeholder {
-    font-size: 13px;
-    font-family: 'Open Sans', sans-serif;
-    color: var(--gray);
 }
 
 button {
@@ -182,6 +238,7 @@ button {
     color: var(--black);
     background-color: var(--normal-yellow);
     box-shadow: var(--box-shadow);
+    border: 1px solid var(--black);
     width: 85px;
     height: 28px;
 }
@@ -194,15 +251,24 @@ button:active {
     background-color: #C6B903;
 }
 
+/** ---------------- SECTION WRAPPER ---------------- **/
 section {
     background-color: var(--white-yellow);
     border: 1px solid var(--black);
-    margin-top: 40px;
-    margin-bottom: 40px;
+    margin: 20px auto;
     padding: 20px;
+    width: 55%;
     box-shadow: var(--box-shadow);
+    border-radius: 5px;
 }
 
-textarea {
-    width: 80%;
+/** ---------------- FOOTER ---------------- **/
+footer {
+    font-size: 13px;
+    font-weight: bold;
+    color: var(--white-yellow);
+    background-color: var(--orange);
+    text-align: center;
+    padding: 10px;
+    border-top: 1px solid var(--black);
 }

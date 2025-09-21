@@ -11,25 +11,37 @@
     <body>
         <main>
         <form action="/action_page.php" role="form" aria-label="FurFresh Grooming Services Form">
+            <header></header>
             <div class="header">
                 <h1>FurFresh</h1>
                 <p class="description"><i>Grooming Services Forms</i></p>
             </div>
             <section class="owner-inf">
                 <h2>Owner Information</h2>
-                    <label for="fullname">Full Name (eg. Dela Cruz, Juan D.):</label>
-                    <input type="text" class="fullname" name="fullname" placeholder="Enter Name" required aria-required="true">
-                    <label for="phone">Contact Number:</label>
-                    <input type="tel" class="phone" name="phone" pattern="^\+?[0-9]{7,15}$" placeholder="+639123456789" required aria-required="true">
-                    <label for="email">Email Address:</label>
-                    <input type="email" class="email" name="email" placeholder="email@email.com" required aria-required="true">
+                    <div>
+                        <label for="fullname">Full Name (eg. Dela Cruz, Juan D.):</label>
+                        <input type="text" class="fullname" name="fullname" placeholder="Enter Name" required aria-required="true">
+                    </div>
+                    <div>
+                        <label for="phone">Contact Number:</label>
+                        <input type="tel" class="phone" name="phone" pattern="^\+?[0-9]{7,15}$" placeholder="+639123456789" required aria-required="true">
+                    </div>
+                    <div>
+                        <label for="email">Email Address:</label>
+                        <input type="email" class="email" name="email" placeholder="email@email.com" required aria-required="true">
+                    </div> 
             </section>
             <section class="cat-inf">
                 <h2>Cat Information</h2>
+                <div>
                     <label for="catname">Name:</label>
                     <input type="text" class="catname" name="catname" placeholder="Enter Name" required aria-required="true">
+                </div>
+                <div>
                     <label for="catage">Age (in months):</label>
                     <input type="number" class="catage" name="catage" min="1" max="456" placeholder="Enter Age" required aria-required="true">
+                </div>
+                <div>
                     <fieldset aria-labelledby="gender-label">
                         <legend id="gender-label">Gender:</legend>
                         <div class="gender-grid">
@@ -43,8 +55,12 @@
                             </div>
                         </div>
                     </fieldset>
+                </div>
+                <div>
                     <label for="catweight">Weight (in kilograms):</label>
                     <input type="number" class="catweight" name="catweight" min="1" max="60" placeholder="Enter Weight" required aria-required="true">
+                </div>
+                <div>
                     <fieldset aria-labelledby="breed-label">
                         <legend id="breed-label">Breed:</legend>
                         <div class="breed-grid">
@@ -68,12 +84,14 @@
                                 <input type="radio" id="brit-short" name="catbreed" value="brit-short">
                                 <label for="brit-short">British Shorthair</label>
                             </div>
-                            <div>
+                            <div class="others">
                                 <label for="other-breed">Others:</label>
                                 <input type="text" id="other-breed" name="catbreed" placeholder="Enter Breed">
                             </div>
                         </div>
                     </fieldset>
+                </div>
+                <div>
                     <fieldset aria-labelledby="temp-label">
                         <legend id="temp-label">Temperament:</legend>
                         <div class="temp-grid">
@@ -95,6 +113,7 @@
                             </div>
                         </div>
                     </fieldset>
+                </div>
             </section>
             <section class="services-inf">
                 <h2>Grooming Services Selection</h2>
@@ -138,12 +157,18 @@
             </section>
             <section class="appointment-inf">
                 <h2>Appointment Details</h2>
-                    <label for="date-time">Preferred Date and Time:</label>
-                    <input type="datetime-local" id="date-time" name="date-time" required aria-required="true">
-                    <label for="instructions">Special Instructions:</label>
-                    <textarea id="instructions" name="instructions" rows="5" cols="70" placeholder="Let us know any special instructions..." aria-describedby="instructions-help"></textarea>
-                    <p id="instructions-help"><strong>Example:</strong> allergies, medical conditions, or special grooming needs.</p>
-                    <button type="submit" id="submit">Submit</button>
+                    <div>
+                        <label for="date-time">Preferred Date and Time:</label>
+                        <input type="datetime-local" id="date-time" name="date-time" required aria-required="true">
+                    </div>
+                    <div>
+                        <label for="instructions">Special Instructions:</label>
+                        <textarea id="instructions" name="instructions" rows="5" cols="70" placeholder="Let us know any special instructions..." aria-describedby="instructions-help"></textarea>
+                        <p id="instructions-help"><strong>Example:</strong> allergies, medical conditions, or special grooming needs.</p>
+                    </div>
+                    <div>
+                        <button type="submit" id="submit">Submit</button>
+                    </div>
             </section>
             </form>
         </main>
