@@ -1,46 +1,21 @@
-# Frontend Development Repository
-In this repository, I have compiled all my frontend development projects, including personal projects. This repository showcases various frontend implementations, including responsive designs, interactive UI components, and full-fledged web applications using modern web technologies.
+# Frontend Playground  
 
-## Folder Structure
-```
-📂 Frontend-Repo
-├── 📂 src                     # Source code files
-│   ├── 📂 personal_projects   # Self-initiated frontend projects
-│   │   ├── 📂 landing_pages   # Standalone landing page designs
-│   │   ├── 📂 web_apps        # Full-fledged web applications
-│   │   ├── 📂 components      # UI component libraries
-└── 📄 README.md               # Project documentation
-```
+This repository is my **frontend development playground**, where I explore, practice, and build projects to sharpen my skills in web development. It includes small experiments, personal projects, responsive layouts, and interactive components that reflect my growth as a frontend developer.
 
-## Tech Stack Used
-- **HTML5** - Structuring web pages
-- **CSS3 (SCSS, Tailwind CSS)** - Styling and responsive design
-- **JavaScript (ES6+)** - Interactive UI functionality
-- **React.js / Vue.js** - Frontend frameworks
-- **Next.js / Nuxt.js** - Server-side rendering and static site generation
+## Structure  
+- Inside are subfolders or files for experiments, components, and projects.  
+- Some entries include notes or explanations for concepts I explored.  
 
-## Usage
-To view the projects:
+## Purpose  
+- Strengthen frontend development skills through hands-on coding.  
+- Explore modern frameworks, tools, and responsive design techniques.  
+- Document my progress and growth as a frontend developer in IT.  
 
-1. Visit the repository: [Frontend-Repo](https://github.com/specialgrade/Frontend-Repo)
-2. Browse through the available projects under the `src` directory.
-3. Open the project folder and check the `README.md` for specific details.
+## Tech Stack Practiced  
+- **HTML5** – Structuring web pages.  
+- **CSS3 (SCSS, Tailwind CSS)** – Styling, responsive design, and layouts.  
+- **JavaScript (ES6+)** – Interactivity and functionality.  
+- **React.js / Vue.js** – Component-based frameworks.  
+- **Next.js / Nuxt.js** – Server-side rendering and static site generation.  
 
-To run a project locally:
-
-1. Clone the repository:
-   ```sh
-   git clone https://github.com/specialgrade/Frontend-Repo.git
-   ```
-2. Navigate to the project directory:
-   ```sh
-   cd Frontend-Repo/src/project-name
-   ```
-3. If the project uses npm dependencies, install them:
-   ```sh
-   npm install
-   ```
-4. Start the development server:
-   ```sh
-   npm run dev
-   ```
+> This is not a polished project repo, but rather a sandbox of growth, documenting my journey in frontend development.  
